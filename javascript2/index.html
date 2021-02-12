@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--javacript-->
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+
+
+</head>
+<body>
+
+    <script>
+          function saludar(){
+            const value = document.getElementById("num").value
+                    }
+
+      function clean(){
+       document.getElementById("textToUse").value = null
+}
+
+function getText(){
+   
+    const newText = document.getElementById("textToUse").value
+    return newText
+}
+
+          function cambio(){
+        const content = getText()
+        document.getElementById("paragraph").innerHTML = content 
+    clean()
+
+}      
+
+function cambio(){
+        const content = getText()
+}
+
+    </script>
+    <p id="paragraph">Hola Michael Cocuy, Como esta?</p>
+    <input type="text" placeholder="ingrese texto" id="textToUse">
+    <button onclick="cambio()">Saludar</button>
+    
+    
+</body>
+</html>
